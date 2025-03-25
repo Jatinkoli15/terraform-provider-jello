@@ -2,8 +2,8 @@ package e2e
 
 import (
 	"terraform-e2e-provider/client"
-	"terraform-e2e-provider/e2e/integration"
 	"terraform-e2e-provider/e2e/dataset"
+	"terraform-e2e-provider/e2e/integration"
 	"terraform-e2e-provider/e2e/modelEndpoint"
 	"terraform-e2e-provider/e2e/modelRepo"
 	"terraform-e2e-provider/e2e/notebook"
