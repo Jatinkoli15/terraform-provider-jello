@@ -1,5 +1,3 @@
-
-
 package client
 
 import (
@@ -9,7 +7,8 @@ import (
 	"io"
 	"log"
 	"net/http"
-	"terraform-e2e-provider/models"
+
+	"github.com/Jatinkoli15/terraform-provider-jello/models"
 )
 
 type Client struct {

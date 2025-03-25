@@ -6,7 +6,8 @@ import (
 	"io"
 	"log"
 	"net/http"
-	"terraform-e2e-provider/models"
+
+	"github.com/Jatinkoli15/terraform-provider-jello/models"
 )
 
 func (c *Client) NewIntegration(item *models.Integration, projectID string, teamID string, activeIAM string) (map[string]interface{}, error) {

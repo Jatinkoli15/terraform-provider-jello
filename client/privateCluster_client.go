@@ -6,11 +6,9 @@ import (
 	"io"
 	"log"
 	"net/http"
-	"terraform-e2e-provider/models"
+
+	"github.com/Jatinkoli15/terraform-provider-jello/models"
 )
-
-
-
 
 func (c *Client) NewPrivateCluster(item *models.PrivateCluster, projectID string, teamID string, activeIAM string) (map[string]interface{}, error) {
 	integrationJSON, _ := json.Marshal(item)
@@ -46,7 +44,6 @@ func (c *Client) NewPrivateCluster(item *models.PrivateCluster, projectID string
 	}
 	return jsonRes, nil
 }
-
 
 func (c *Client) DeletePrivateCluster(privateClusterID string, projectID string, teamID string, activeIAM string) (map[string]interface{}, error) {
 	url := c.Api_endpoint + "/teams/" + teamID + "/projects/" + projectID + "/private-cluster/" + privateClusterID + "/"

@@ -1,13 +1,19 @@
 package e2e
 
 import (
-	"terraform-e2e-provider/client"
-	"terraform-e2e-provider/e2e/dataset"
-	"terraform-e2e-provider/e2e/integration"
-	"terraform-e2e-provider/e2e/modelEndpoint"
-	"terraform-e2e-provider/e2e/modelRepo"
-	"terraform-e2e-provider/e2e/notebook"
-	"terraform-e2e-provider/e2e/privateCluster"
+	"github.com/Jatinkoli15/terraform-provider-jello/e2e/privateCluster"
+
+	"github.com/Jatinkoli15/terraform-provider-jello/e2e/notebook"
+
+	"github.com/Jatinkoli15/terraform-provider-jello/e2e/modelRepo"
+
+	"github.com/Jatinkoli15/terraform-provider-jello/e2e/modelEndpoint"
+
+	"github.com/Jatinkoli15/terraform-provider-jello/e2e/integration"
+
+	"github.com/Jatinkoli15/terraform-provider-jello/e2e/dataset"
+
+	"github.com/Jatinkoli15/terraform-provider-jello/client"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
@@ -42,7 +48,7 @@ func Provider() *schema.Provider {
 			"e2e_modelRepository": modelRepo.ResourceModelRepo(),
 			"e2e_modelEndpoint":   modelEndpoint.ResourceModel(),
 			"e2e_integration":     integration.ResourceModelRepo(),
-			"e2e_privateCluster" : privateCluster.ResourcePrivateCluster(),
+			"e2e_privateCluster":  privateCluster.ResourcePrivateCluster(),
 		},
 		DataSourcesMap: map[string]*schema.Resource{
 			"e2e_notebook":       notebook.DataSourceImages(),

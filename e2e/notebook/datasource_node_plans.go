@@ -9,8 +9,10 @@ import (
 	"context"
 	"log"
 	"reflect"
-	"terraform-e2e-provider/client"
-	"terraform-e2e-provider/models"
+
+	"github.com/Jatinkoli15/terraform-provider-jello/models"
+
+	"github.com/Jatinkoli15/terraform-provider-jello/client"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"

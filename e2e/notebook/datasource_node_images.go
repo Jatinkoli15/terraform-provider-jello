@@ -3,7 +3,8 @@ package notebook
 import (
 	"context"
 	"log"
-	"terraform-e2e-provider/client"
+
+	"github.com/Jatinkoli15/terraform-provider-jello/client"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
